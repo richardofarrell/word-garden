@@ -51,7 +51,7 @@ const vibeOptions = [
   "archaic",
 ];
 
-function loadWords() {
+function loadWords(): any {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
     return saved ? JSON.parse(saved) : starterWords;
@@ -60,7 +60,7 @@ function loadWords() {
   }
 }
 
-function saveWords(words) {
+function saveWords(words: any) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(words));
 }
 
